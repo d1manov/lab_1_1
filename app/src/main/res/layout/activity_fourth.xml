@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourthActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_to_lunch"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="240sp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="Рулет из скумбрии с черносливом и сыром, запечённый в сметане"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RU"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fourth"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7sp"
+            android:layout_marginTop="7sp"
+            android:layout_marginBottom="5sp"
+            android:textSize="16sp"
+            android:text="Ингредиенты:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:text="1) Скумбрия свежемороженая — 1 шт. \n2) Чернослив вяленый без косточек — 4-6 шт. \n3) Сыр твёрдый — 40 г \n4) Лук репчатый — 80 г (0,5-1 шт.) \n5) Масло сливочное — 20 г \n6) Сметана (жирностью 10 %) — 100 г \n7) Петрушка свежая — несколько веточек \n8) Соль — по вкусу \n9) Перец белый молотый — по вкусу \n10) Мускатный орех молотый — по вкусу"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7sp"
+            android:layout_marginTop="7sp"
+            android:layout_marginBottom="5sp"
+            android:textSize="16sp"
+            android:text="Приготовление:"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:text="1) Скумбрию заранее размораживаем. Разогреваем духовку до 180 градусов \n2) Чернослив заливаем горячей водой и оставляем, чтобы он стал мягче и пластичнее \n3) Чернослив обсушиваем и нарезаем мелкими кусочками \n4) Скумбрию разрезаем вдоль, удаляем внутренности и хребет. Вынимаем все кости, обрезаем хвост и плавники. Пласт рыбы промываем и обсушиваем бумажными полотенцами. \n5) Пласт скумбрии с внутренней стороны накрываем пищевой плёнкой и аккуратно отбиваем кулинарным молотком, чтобы он стал более плоским и равномерным со всех сторон \n6) Солим и перчим рыбу со всех сторон и оставляем под плёнкой \n7) Лук очищаем и нарезаем мелкими кубиками. Сыр натираем на мелкой тёрке. Петрушку измельчаем. \n8) Обжариваем лук на сливочном масле 5-7 минут, до золотистости и мягкости \n9) Перекладываем лук в форму для запекания. \n10) На рыбу выкладываем сыр и измельчённый чернослив. \n11) Сворачиваем скумбрию в плотный рулет. Закалываем края зубочистками, чтобы рулет держал форму. Выкладываем рулет в форму с луком. \n12) Посыпаем рыбный рулет мускатным орехом и поливаем сметаной. Затем снова посыпаем мускатным орехом, солим и перчим. Ставим форму в разогретую до 180 градусов духовку на 20-25 минут. \n13) Рулет из скумбрии с черносливом и сыром готов. \n14) Посыпаем готовое блюдо свежей петрушкой и подаём к столу."/>
+            />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

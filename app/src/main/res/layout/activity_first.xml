@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_to_breakfast"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Манные биточки"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RU"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/first"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7sp"
+            android:layout_marginTop="7sp"
+            android:layout_marginBottom="5sp"
+            android:textSize="16sp"
+            android:text="Ингредиенты:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:text="1) Молоко - 500 мл \n2) Крупа манная - 160 г \n3) Мука - 2 ст. ложки \n4) Яйцо - 1 шт. \n5) Масло растительное - 40 мл \n6) Ванилин - 2 щепотки \n7) Сахар - 60 г \n8) Соль - 1 щепотка"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7sp"
+            android:layout_marginTop="7sp"
+            android:layout_marginBottom="5sp"
+            android:textSize="16sp"
+            android:text="Приготовление:"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:text="1) В кастрюле вскипятите молоко \n2) Непрерывно помешивая молоко венчиком, тонкой струйкой всыпьте манную крупу. Варите кашу около 3 минут, до загустения. Каша должна получиться густой \n3) Готовую кашу переложите в миску и оставьте остывать до тёплого состояния \n4) Затем в манную кашу вбейте яйцо, всыпьте сахар, ванилин и маленькую щепотку соли \n5) Перемешайте до однородности \n6) Смоченными в воде руками сформируйте из манного 'теста' круглую толстенькую лепёшку и обваляйте её в муке \n7) Таким образом сформируйте остальные биточки \n8) Разогрейте сковороду с растительным маслом и выложите туда часть манных биточков \n9) Обжарьте биточки на небольшом огне по 3 минуты с каждой стороны, до золотистой корочки \n10) Таким образом обжарьте все биточки \n11) Подавайте биточки к столу в горячем, тёплом или остывшем виде, с мёдом, вареньем или сгущёнкой"/>
+            />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

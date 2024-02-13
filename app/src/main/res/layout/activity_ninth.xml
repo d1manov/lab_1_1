@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NinthActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_to_dinner"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="240sp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="Запеканка 'Тающая во рту нежность'"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RU"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ninth"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7sp"
+            android:layout_marginTop="7sp"
+            android:layout_marginBottom="5sp"
+            android:textSize="16sp"
+            android:text="Ингредиенты:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:text="1) Картофель сырой, очищенный - примерно 800 г. \n2) Фарш мясной - 600 г. \n3) Лук репчатый (небольшой) - 2-3 шт. \n4) Помидоры - 2 шт. \n5) Перец болгарский - 1 шт. \n6) Сыр твердый - 100 г. \n7) Яйцо куриное - 1 шт. \n8) Молоко (по желанию) - для картофельного пюре \n9) Масло сливочное - 10 г. \n10) Масло растительное - для обжарки \n11) Соль - по вкусу \n12) Перец - по вкусу \n13) Зелень - по вкусу \n14) Приправа для фарша - по вкусу"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7sp"
+            android:layout_marginTop="7sp"
+            android:layout_marginBottom="5sp"
+            android:textSize="16sp"
+            android:text="Приготовление:"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:text="1) В первую очередь поставьте отвариваться картофель. Не забудьте хорошо посолить воду. Варите картошку до готовности, 20-25 минут. \n2) Лук, перец и томаты нарежьте небольшими кусочками. \n3) На хорошо разогретой сковороде с растительным маслом обжарьте лук, болгарский перец и мясной фарш. В обжаренный фарш с овощами добавьте помидоры, соль, перец и любимые приправы для мясного фарша. Оставьте тушиться еще на 5-10 минут, до полной готовности фарша. \n4) Из отварного картофеля сделайте картофельное пюре со сливочным маслом и яйцом. При необходимости добавьте немного горячего молока. Готовое картофельное пюре посолите по вкусу. \n5) Твердый сыр натрите на терке. \n6) Сформируйте запеканку. Для этого сначала выложите в форму половину картофельного пюре и аккуратно разровняйте его. Далее распределите обжаренный фарш с овощами, тоже разровняйте. \n7) Сверху равномерно выложите оставшуюся половину картофельного пюре. Засыпьте всё тёртым сыром. \n8) Картофельную запеканку с фаршем и сыром поместите в разогретую духовку до тех пор, пока сыр не расплавится. Это примерно 10-15 минут. Готовую картофельно-мясную запеканку посыпьте зеленью, разрежьте на порции и подавайте к столу!"/>
+            />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

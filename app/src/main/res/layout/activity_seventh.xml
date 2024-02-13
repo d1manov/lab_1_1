@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeventhActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_to_dinner"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Назад"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="240sp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="Жюльен с курицей и грибами"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RU"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/seventh"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7sp"
+            android:layout_marginTop="7sp"
+            android:layout_marginBottom="5sp"
+            android:textSize="16sp"
+            android:text="Ингредиенты:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:text="1) Филе куриное - 400 г. \n2) Грибы шампиньоны - 300 г. \n3) Лук репчатый - 100 г. \n4) Сливки 20-30% - 200 мл. \n5) Сыр твердый - 150 г. \n6) Масло растительное - 2 ст. ложки \n7) Соль - по вкусу \n8) Перец черный молотый - по вкусу \n9) Соль - по вкусу \n10) Зелень (базилик или салатные листья) - для украшения"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7sp"
+            android:layout_marginTop="7sp"
+            android:layout_marginBottom="5sp"
+            android:textSize="16sp"
+            android:text="Приготовление:"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:text="1) Куриное филе нарежьте небольшими кусочками. \n2) Курицу обжарьте на растительном масле несколько минут до полуготовности. Лук мелко нарежьте, добавьте к курице и жарьте куриное филе с луком еще 3-4 минуты. \n3) Шампиньоны крупно нарежьте и добавьте в сковороду. После того, как выпарится влага из грибов, посолите, поперчите и готовьте курицу с луком и грибами еще 5-7 минут, до золотистого цвета. \n4) Залейте мясо и грибы сливками, немного прогрейте всё вместе. \n5) Сыр натрите на крупной терке и выложите сверху. Выключите огонь и накройте сковороду крышкой. \n6) Когда через 3-5 минут сыр расплавится, жюльен с грибами и курицей можно подавать к столу. \n7) Если ваша сковорода позволяет, украсьте жульен с курицей листиками базилика и подавайте к столу прямо в этой посуде."/>
+            />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
