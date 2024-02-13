@@ -25,9 +25,8 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Назад"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"/>
+                android:text="@string/Back"
+                android:layout_alignParentStart="true" />
 
             <TextView
                 android:id="@+id/textView"
@@ -35,17 +34,17 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
-                android:text="Лагман с курицей"
+                android:text="@string/Rec_5"
                 android:textSize="20sp"
                 android:layout_centerVertical="true"/>
 
             <Button
+                android:id="@+id/language_main"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RU"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"/>
+                android:text="@string/Language"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 
@@ -62,13 +61,13 @@
             android:layout_marginTop="7sp"
             android:layout_marginBottom="5sp"
             android:textSize="16sp"
-            android:text="Ингредиенты:"/>
+            android:text="@string/Ingredients"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
-            android:text="1) Лапша - 60 г. \n2) Филе куриное - 300 г. \n3) Помидоры - 2 шт. \n4) Перец болгарский - 1 шт. \n5) Морковь - 2 шт. \n6) Лук репчатый - 1-2 шт. \n7) Томатная паста - 2 ст. ложки \n8) Сахар - 1 ст. ложка \n9) Соль - 3 щепотки \n10) Перец черный молотый - 3 щепотки \n11) Масло растительное - 40 мл"/>
+            android:text="@string/Ingredients_5"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -77,7 +76,7 @@
             android:layout_marginTop="7sp"
             android:layout_marginBottom="5sp"
             android:textSize="16sp"
-            android:text="Приготовление:"/>
+            android:text="@string/Cooking"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -87,8 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20sp"
-                android:text="1) Куриное филе промойте, обсушите, удалите пленки и жилы. \n2) Нарежьте куриное филе средними кусочками. Влейте в казан или на сковороду с высокими бортиками растительное масло и разогрейте его. Добавьте туда куриное филе и обжаривайте около 7-10 минут до румяной корочки. \n3) Морковь и лук очистите, вымойте и нарежьте кубиками. Добавьте к курице и обжаривайте еще 5-7 минут до мягкости овощей. \n4) Помидоры и болгарский перец вымойте, удалите из перца семена. Нарежьте овощи средними кубиками и добавьте в сковороду с курицей. Добавьте сахар и 2 щепотки соли. Перемешайте и тушите куриное филе с овощами около 15 минут на среднем огне. \n5) В это время вскипятите воду в кастрюле, всыпьте щепотку соли и отварите лапшу до готовности, примерно 7-10 минут. Затем откиньте лапшу на дуршлаг и верните обратно в кастрюлю. \n6) Добавьте к курице с овощами томатную пасту, молотый черный перец. Влейте 0,5 стакана воды, аккуратно все перемешайте. Тушите ровно 5 минут. (При желании можно добавить промытую и измельченную зелень.) \n7) Выложите в глубокие тарелки отварную лапшу, на нее - подливу с курицей и овощами. Украсьте лагман с курицей зеленью и сразу же подавайте к столу!"/>
-            />
+                android:text="@string/Cooking_5"/>
 
         </ScrollView>
 

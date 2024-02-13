@@ -25,26 +25,25 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Назад"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"/>
+                android:text="@string/Back"
+                android:layout_alignParentStart="true" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Шакшука"
+                android:text="@string/Rec_2"
                 android:textSize="20sp"
                 android:layout_centerVertical="true"/>
 
             <Button
+                android:id="@+id/language_main"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RU"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"/>
+                android:text="@string/Language"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 
@@ -61,7 +60,7 @@
             android:layout_marginTop="7sp"
             android:layout_marginBottom="5sp"
             android:textSize="16sp"
-            android:text="Ингредиенты:"/>
+            android:text="@string/Ingredients"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -71,8 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20sp"
-                android:text="1) Яйца - 4 шт \n2) Помидоры - 5 шт \n3) Перец болгарский красный - 1/2 шт \n4) Перец чили свежий - 1/2 шт \n5) Лук репчатый - 1 шт \n6) Чеснок - 3 зубчика \n7) Сахар - 1 ч. ложка \n8) Паприка сладкая молотая - 1 ч. ложка \n 9) Перец черный горошком - 6 шт \n10) Перец белый горошком - 5 шт \n11) Кориандр, зерна - 10 шт \n12) Базилик сухой - 1 ч. ложка \n13) Зелень петрушки (мелко нарезанная) - 1 ч. ложка"
-            />
+                android:text="@string/Ingredients_2" />
 
         </ScrollView>
 
@@ -83,7 +81,7 @@
             android:layout_marginTop="7sp"
             android:layout_marginBottom="5sp"
             android:textSize="16sp"
-            android:text="Приготовление:"/>
+            android:text="@string/Cooking"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -93,8 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20sp"
-                android:text="1) Сладкий перец мелко нарезать \n2) Измельчить лук \n3) Мелко нарезать чеснок \n4) Острый перец очистить от семян и тоже измельчить \n5) Помидоры нарезать вместе с семенами \n6) Растереть в ступке все специи: два вида перца, кориандр, базилик и паприку \n7) На разогретую сковороду налить растительное масло, обжарить чеснок и горький перец в течение 2-3 минут \n8) Добавить лук \n9) Туда же отправить болгарский перец и 1 ч.ложку сахара \n10) Добавить помидоры. Тушить на маленьком огне 8 минут, добавить все специи и соль \n11) Ложкой в тушеных овощах для каждого яйца сделать небольшое углубление и вылить туда яйца \n 12) Продолжать жарить шакшуку на небольшом огне 5-6 минут, до готовности. Яичный белок должен побелеть, а желток должен остаться жидким \n13) Перед подачей шакшуку посыпать зеленью. Подавать на сковороде"/>
-            />
+                android:text="@string/Cooking_2"/>
 
         </ScrollView>
 

@@ -25,9 +25,8 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Назад"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"/>
+                android:text="@string/Back"
+                android:layout_alignParentStart="true" />
 
             <TextView
                 android:id="@+id/textView"
@@ -35,17 +34,17 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
-                android:text="Джамбалайя"
+                android:text="@string/Rec_8"
                 android:textSize="20sp"
                 android:layout_centerVertical="true"/>
 
             <Button
+                android:id="@+id/language_main"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RU"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"/>
+                android:text="@string/Language"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 
@@ -62,13 +61,13 @@
             android:layout_marginTop="7sp"
             android:layout_marginBottom="5sp"
             android:textSize="16sp"
-            android:text="Ингредиенты:"/>
+            android:text="@string/Ingredients"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
-            android:text="1) Сосиски (желательно подкопчённые или копчёные) - 400 г. \n2) Рис - 350 г. \n3) Лук репчатый - 1 шт. \n4) Перец болгарский - 200 г. \n5) Помидоры - 300 г. \n6) Чеснок - 2 зубчика \n7) Томатная паста - 1 ст. ложка \n8) Масло растительное - 60 мл \n9) Петрушка свежая - 1 пучок \n10) Соль - по вкусу \n11) Перец чёрный молотый - по вкусу"/>
+            android:text="@string/Ingredients_8"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -77,7 +76,7 @@
             android:layout_marginTop="7sp"
             android:layout_marginBottom="5sp"
             android:textSize="16sp"
-            android:text="Приготовление:"/>
+            android:text="@string/Cooking"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -87,8 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20sp"
-                android:text="1) На помидорах делаем крестообразные надрезы. Заливаем помидоры кипятком и отставляем, пока будем заниматься другими овощами. \n2) Очищенный лук нарезаем мелкими кубиками. Очищенный чеснок мелко рубим ножом. \n3) Сладкий болгарский перец освобождаем от плодоножек и семян и нарезаем небольшими кусочками. \n4) Помидоры очищаем от шкурки и нарезаем кубиками. \n5) Сосиски очищаем от упаковочной плёнки и нарезаем кружочками. \n6) На растительном масле обжариваем сосиски. Отставляем пока в сторону. \n7) В посуде, в которой будем готовить джамбалайю (подойдёт глубокая сковорода или сотейник), разогреваем растительное масло. Обжариваем лук до прозрачности. \n8) Добавляем к луку сладкий перец и слегка обжариваем. \n9) Добавляем помидоры, чеснок и томатную пасту. Солим и перчим. \n10) Туда же добавляем сосиски и рис. Перемешиваем и заливаем горячей водой. Вода должна быть выше содержимого сковороды или сотейника примерно на 1,5-2 см. Убавляем огонь, накрываем крышкой и тушим до готовности риса. \n11) Готовое блюдо посыпаем рубленой зеленью петрушки."/>
-            />
+                android:text="@string/Cooking_8"/>
 
         </ScrollView>
 

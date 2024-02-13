@@ -25,17 +25,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Рецепты"
+                android:text="@string/Recipes"
                 android:textSize="30sp"
                 android:layout_centerVertical="true"/>
 
             <Button
+                android:id="@+id/language_main"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RU"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"/>
+                android:text="@string/Language"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 
@@ -44,21 +44,21 @@
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Завтрак" />
+            android:text="@string/Breakfast" />
 
         <Button
             android:id="@+id/lunch_btn"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Обед" />
+            android:text="@string/Lunch" />
 
         <Button
             android:id="@+id/dinner_btn"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ужин" />
+            android:text="@string/Dinner" />
 
     </LinearLayout>
 

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class BreakfastActivity extends AppCompatActivity {
-    Button back_to_main, first_btn, second_btn, third_btn;
+    Button back_to_main, first_btn, second_btn, third_btn, language_main;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class BreakfastActivity extends AppCompatActivity {
         first_btn = findViewById(R.id.first_btn);
         second_btn = findViewById(R.id.second_btn);
         third_btn = findViewById(R.id.third_btn);
+        language_main = findViewById(R.id.language_main);
 
         back_to_main.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +49,14 @@ public class BreakfastActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(BreakfastActivity.this, ThirdActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        language_main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(BreakfastActivity.this, LanguageMainActivity.class);
                 startActivity(intent);
             }
         });

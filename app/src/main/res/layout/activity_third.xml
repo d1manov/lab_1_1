@@ -25,26 +25,25 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Назад"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"/>
+                android:text="@string/Back"
+                android:layout_alignParentStart="true" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Яблочные оладьи"
+                android:text="@string/Rec_3"
                 android:textSize="20sp"
                 android:layout_centerVertical="true"/>
 
             <Button
+                android:id="@+id/language_main"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RU"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"/>
+                android:text="@string/Language"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 
@@ -61,14 +60,13 @@
             android:layout_marginTop="7sp"
             android:layout_marginBottom="5sp"
             android:textSize="16sp"
-            android:text="Ингредиенты:"/>
+            android:text="@string/Ingredients"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
-            android:text="1) Яблоки - 3 шт \n2) Сахар - 2 ст. ложки \n3) Яйцо - 1 шт \n4) Мука - 4 ст. ложки \n5) Корица молотая - 0,5 ч. ложки \n6) Чеснок - 3 зубчика \n7) Масло растительное - для жарки"
-            />
+            android:text="@string/Ingredients_3" />
 
         <TextView
             android:layout_width="match_parent"
@@ -77,14 +75,13 @@
             android:layout_marginTop="7sp"
             android:layout_marginBottom="5sp"
             android:textSize="16sp"
-            android:text="Приготовление:"/>
+            android:text="@string/Cooking"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
-            android:text="1) Яблоки очистить, вырезать сердцевинки. Натереть яблоки на крупной тёрке \n2) Натёртые яблоки переложить в глубокую миску. Всыпать сахар \n3) Добавить к яблокам корицу и яйцо \n4) Перемешать массу \n5) Затем постепенно всыпать муку, хорошо перемешивая лопаткой \n6) Выкладывать яблочное тесто столовой ложкой на хорошо разогретую сковороду с маслом, формируя небольшие оладушки \n7) Жарить яблочные оладьи на небольшом огне по 3 минуты с каждой стороны \n8) Подаём яблочные оладьи с мёдом или сметаной"/>
-        />
+            android:text="@string/Cooking_3"/>
 
     </LinearLayout>
 

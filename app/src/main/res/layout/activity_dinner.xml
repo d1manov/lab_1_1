@@ -25,16 +25,15 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Назад"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"/>
+                android:text="@string/Back"
+                android:layout_alignParentStart="true" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Ужин"
+                android:text="@string/Dinner"
                 android:textSize="30sp"
                 android:layout_centerVertical="true"/>
 
@@ -42,9 +41,8 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RU"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"/>
+                android:text="@string/Language"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 
@@ -53,21 +51,21 @@
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Жюльен с курицей и грибами" />
+            android:text="@string/Rec_7" />
 
         <Button
             android:id="@+id/eighth_btn"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Джамбалайя" />
+            android:text="@string/Rec_8" />
 
         <Button
             android:id="@+id/ninth_btn"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Запеканка 'Тающая во рту нежность' "/>
+            android:text="@string/Rec_9"/>
 
     </LinearLayout>
 

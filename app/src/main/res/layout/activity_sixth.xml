@@ -25,9 +25,8 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Назад"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"/>
+                android:text="@string/Back"
+                android:layout_alignParentStart="true" />
 
             <TextView
                 android:id="@+id/textView"
@@ -35,17 +34,17 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
-                android:text="Паста 'Карбонара'"
+                android:text="@string/Rec_6"
                 android:textSize="20sp"
                 android:layout_centerVertical="true"/>
 
             <Button
+                android:id="@+id/language_main"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RU"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"/>
+                android:text="@string/Language"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 
@@ -62,13 +61,13 @@
             android:layout_marginTop="7sp"
             android:layout_marginBottom="5sp"
             android:textSize="16sp"
-            android:text="Ингредиенты:"/>
+            android:text="@string/Ingredients"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
-            android:text="1) Спагетти - 400 г. \n2) Грудинка варено-копчёная - 200 г. \n3) Яйцо куриное - 1 шт. \n4) Желтки - 3 шт. \n5) Сыр пармезан - 75 г. \n6) Масло сливочное - 2 ст.ложки \n7) Масло оливковое - 1 ст.ложка \n8) Чеснок - 2 зубчика \n9) Соль - по вкусу \n10) Перец черный - по вкусу"/>
+            android:text="@string/Ingredients_6"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -77,7 +76,7 @@
             android:layout_marginTop="7sp"
             android:layout_marginBottom="5sp"
             android:textSize="16sp"
-            android:text="Приготовление:"/>
+            android:text="@string/Cooking"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -87,8 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20sp"
-                android:text="1) Нарезать грудинку мелкими кубиками. \n2) Разогреть сковороду, растопить 1 ст. ложку сливочного масла и отправить туда грудинку. Добавить 2 зубчика чеснока, предварительно раздавленных ножом. Грудинку обжаривать на маленьком огне 10 минут, из неё должен вытопиться жир, но она должна остаться мягкой. После обжаривания чеснок убрать. \n3) В кипящую воду добавляем 1 ст. ложку соли, 1 ст. ложку оливкового масла и спагетти. Варим так, как указано на упаковке спагетти, - важно соблюдать указанное время варки, чтобы сварить спагетти правильно. \n4) У трёх яиц отделить белки от желтков. Отправить в миску 3 желтка и одно яйцо с белком, посолить и поперчить (по 1 щепотке), хорошо взбить и добавить 2 ст. ложки натертого сыра. Перемешать. \n5) Готовые спагетти откинуть на дуршлаг, предварительно оставив 1,5 стакана воды, в которой они варились. \n6) Выключить огонь под сковородой с грудинкой, отправить туда спагетти, добавить 1 ст. ложку сливочного масла и вылить взбитые яйца с сыром. \n7) Все тщательно перемешать, постепенно добавить 1 стакан воды от спагетти и 2 ст. ложки сыра, постоянно перемешивая, чтобы яйца не свернулись. \n8) Распределить спагетти по тарелкам, сверху добавить грудинку, посыпать черным молотым перцем и тертым сыром. Паста карбонара готова."/>
-            />
+                android:text="@string/Cooking_6"/>
 
         </ScrollView>
 
