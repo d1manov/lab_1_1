@@ -9,11 +9,13 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button breakfast_btn, lunch_btn, dinner_btn, language_main;
+    private static final int REQUEST_CODE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         breakfast_btn = findViewById(R.id.breakfast_btn);
         lunch_btn = findViewById(R.id.lunch_btn);
@@ -48,9 +50,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, LanguageMainActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST_CODE);
             }
         });
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            recreate();
+            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
     }
 }
 

@@ -10,6 +10,7 @@ import android.widget.Button;
 
 public class FirstActivity extends AppCompatActivity {
     Button back_to_breakfast, language_main;
+    private static final int REQUEST_CODE = 1;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -32,8 +33,18 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(FirstActivity.this, LanguageMainActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST_CODE);
             }
         });
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            recreate();
+            Intent intent = new Intent(FirstActivity.this, FirstActivity.class);
+            startActivity(intent);
+            finish();
+        }
     }
 }

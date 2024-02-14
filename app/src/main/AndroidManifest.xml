@@ -52,10 +52,6 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LanguageActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".DinnerActivity"
             android:exported="false"
             android:screenOrientation="portrait" />

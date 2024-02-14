@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class BreakfastActivity extends AppCompatActivity {
     Button back_to_main, first_btn, second_btn, third_btn, language_main;
+    private static final int REQUEST_CODE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,9 +58,18 @@ public class BreakfastActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(BreakfastActivity.this, LanguageMainActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST_CODE);
             }
         });
     }
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            recreate();
+            Intent intent = new Intent(BreakfastActivity.this, BreakfastActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
 }
