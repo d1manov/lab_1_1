@@ -40,4 +40,24 @@
     <string name="Russian">Русский</string>
     <string name="English">English</string>
     <string name="Japanese">日本語</string>
+    <string name="Cancel">キャンセル</string>
+    <string name="Cooking_porridge">お粥を調理する</string>
+    <string name="Fry_the_meatballs">ミートボールを炒める</string>
+    <string name="Fry_garlic_and_pepper">ニンニクと胡椒を炒める</string>
+    <string name="Lets_stew">煮込みましょう</string>
+    <string name="Continue_frying_until_done">完成するまで炒め続けます</string>
+    <string name="Frying_pancakes">パンケーキを揚げる</string>
+    <string name="Fry_the_onion">玉ねぎを炒める</string>
+    <string name="Oven_timer">オーブンタイマー</string>
+    <string name="Fry_the_fillet_until_golden_brown">フィレをきつね色になるまで揚げる</string>
+    <string name="Add_vegetables_and_fry_further">野菜を加えてさらに炒める</string>
+    <string name="Stir_and_simmer">かき混ぜて煮る</string>
+    <string name="Cooking_noodles">麺を調理する</string>
+    <string name="Lets_simmer_everything_together">全部一緒に煮込みましょう</string>
+    <string name="Frying_the_brisket">ブリスケットを揚げる</string>
+    <string name="Fry_fillet_with_onions">フィレ肉を玉ねぎと一緒に炒める</string>
+    <string name="Fry_after_adding_mushrooms">キノコを加えて炒める</string>
+    <string name="Cooking_potatoes">ジャガイモの調理</string>
+    <string name="Stew_vegetables_with_potatoes">ジャガイモと野菜のシチュー</string>
+    <string name="Ready">準備ができて</string>
 </resources>

@@ -39,4 +39,24 @@
     <string name="Russian">Русский</string>
     <string name="English">English</string>
     <string name="Japanese">日本語</string>
+    <string name="Cooking_porridge">Варим кашу</string>
+    <string name="Fry_the_meatballs">Обжариваем биточки</string>
+    <string name="Cancel">Отмена</string>
+    <string name="Fry_garlic_and_pepper">Жарим чеснок и перец</string>
+    <string name="Lets_stew">Тушим</string>
+    <string name="Continue_frying_until_done">Жарим дальше до готовности</string>
+    <string name="Frying_pancakes">Жарим оладьи</string>
+    <string name="Fry_the_onion">Обжариваем лук</string>
+    <string name="Oven_timer">Таймер для духовки</string>
+    <string name="Fry_the_fillet_until_golden_brown">Обжариваем филе до румяной корочки</string>
+    <string name="Add_vegetables_and_fry_further">Добавляем овощи и жарим дальше</string>
+    <string name="Stir_and_simmer">Перемешиваем и тушим</string>
+    <string name="Cooking_noodles">Варим лапшу</string>
+    <string name="Lets_simmer_everything_together">Тушим всё вместе</string>
+    <string name="Frying_the_brisket">Обжариваем грудинку</string>
+    <string name="Fry_fillet_with_onions">Жарим филе с луком</string>
+    <string name="Fry_after_adding_mushrooms">Жарим после добавления грибов</string>
+    <string name="Cooking_potatoes">Варим картофель</string>
+    <string name="Stew_vegetables_with_potatoes">Тушим овощи с картофелем</string>
+    <string name="Ready">Готово</string>
 </resources>

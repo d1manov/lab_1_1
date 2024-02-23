@@ -40,4 +40,24 @@
     <string name="Russian">Русский</string>
     <string name="English">English</string>
     <string name="Japanese">日本語</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Cooking_porridge">Cooking porridge</string>
+    <string name="Fry_the_meatballs">Fry the meatballs</string>
+    <string name="Fry_garlic_and_pepper">Fry garlic and pepper</string>
+    <string name="Lets_stew">Let\'s stew</string>
+    <string name="Continue_frying_until_done">Continue frying until done</string>
+    <string name="Frying_pancakes">Frying pancakes</string>
+    <string name="Fry_the_onion">Fry the onion</string>
+    <string name="Oven_timer">Oven timer</string>
+    <string name="Fry_the_fillet_until_golden_brown">Fry the fillet until golden brown</string>
+    <string name="Add_vegetables_and_fry_further">Add vegetables and fry further</string>
+    <string name="Stir_and_simmer">Stir and simmer</string>
+    <string name="Cooking_noodles">Cooking noodles</string>
+    <string name="Lets_simmer_everything_together">Let\'s simmer everything together</string>
+    <string name="Frying_the_brisket">Frying the brisket</string>
+    <string name="Fry_fillet_with_onions">Fry fillet with onions</string>
+    <string name="Fry_after_adding_mushrooms">Fry after adding mushrooms</string>
+    <string name="Cooking_potatoes">Cooking potatoes</string>
+    <string name="Stew_vegetables_with_potatoes">Stew vegetables with potatoes</string>
+    <string name="Ready">Ready</string>
 </resources>
