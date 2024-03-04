@@ -2,10 +2,14 @@ package com.example.lab_1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,6 +22,8 @@ public class FourthActivity extends AppCompatActivity {
     Button back_to_lunch, language_main, timer_btn_4_1, timer_btn_4_2;
     TextView text_4_1, text_4_2;
     private CountDownTimer timer7, timer8;
+    private Vibrator vibrator_1, vibrator_2;
+    MediaPlayer player_1, player_2;
     private static final int REQUEST_CODE = 1;
 
     @Override
@@ -32,6 +38,11 @@ public class FourthActivity extends AppCompatActivity {
         text_4_1 = findViewById(R.id.text_4_1);
         text_4_2 = findViewById(R.id.text_4_2);
 
+        vibrator_1=(Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator_2=(Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        player_1=MediaPlayer.create(this,R.raw.finish);
+        player_2=MediaPlayer.create(this,R.raw.finish);
+
         timer_btn_4_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +55,7 @@ public class FourthActivity extends AppCompatActivity {
                 } else {
                     timer_btn_4_1.setText(getString(R.string.Cancel));
                     timer_btn_4_1.setBackgroundColor(Color.RED);
-                    timer7=new CountDownTimer(360000,1000) {
+                    timer7=new CountDownTimer(3000,1000) {
                         @Override
                         public void onTick(long l) {
                             NumberFormat f = new DecimalFormat("00");
@@ -58,9 +69,13 @@ public class FourthActivity extends AppCompatActivity {
 
                         @Override
                         public void onFinish() {
+                            player_1.start();
+                            vibrator_1.vibrate(VibrationEffect.createOneShot(5000, 250));
                             timer_btn_4_1.setText(getString(R.string.Fry_the_onion));
                             timer_btn_4_1.setBackgroundColor(Color.parseColor("#6750a4"));
                             Toast.makeText(getApplicationContext(), getString(R.string.Ready), Toast.LENGTH_SHORT).show();
+                            timer7 = null;
+                            text_4_1.setText("06:00");
                         }
                     };
                     timer7.start();
@@ -80,7 +95,7 @@ public class FourthActivity extends AppCompatActivity {
                 } else {
                     timer_btn_4_2.setText(getString(R.string.Cancel));
                     timer_btn_4_2.setBackgroundColor(Color.RED);
-                    timer8=new CountDownTimer(1380000,1000) {
+                    timer8=new CountDownTimer(6000,1000) {
                         @Override
                         public void onTick(long l) {
                             NumberFormat f = new DecimalFormat("00");
@@ -94,9 +109,13 @@ public class FourthActivity extends AppCompatActivity {
 
                         @Override
                         public void onFinish() {
+                            player_2.start();
+                            vibrator_2.vibrate(VibrationEffect.createOneShot(5000, 250));
                             timer_btn_4_2.setText(getString(R.string.Oven_timer));
                             timer_btn_4_2.setBackgroundColor(Color.parseColor("#6750a4"));
                             Toast.makeText(getApplicationContext(), getString(R.string.Ready), Toast.LENGTH_SHORT).show();
+                            timer8 = null;
+                            text_4_2.setText("23:00");
                         }
                     };
                     timer8.start();

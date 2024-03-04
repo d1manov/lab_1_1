@@ -2,10 +2,14 @@ package com.example.lab_1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,6 +22,8 @@ public class ThirdActivity extends AppCompatActivity {
     Button back_to_breakfast, language_main, timer_btn_3_1;
     TextView text_3_1;
     private CountDownTimer timer6;
+    private Vibrator vibrator_1;
+    MediaPlayer player_1;
     private static final int REQUEST_CODE = 1;
 
     @Override
@@ -29,6 +35,9 @@ public class ThirdActivity extends AppCompatActivity {
         language_main = findViewById(R.id.language_main);
         timer_btn_3_1 = findViewById(R.id.timer_btn_3_1);
         text_3_1 = findViewById(R.id.text_3_1);
+
+        vibrator_1=(Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        player_1=MediaPlayer.create(this,R.raw.finish);
 
         timer_btn_3_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +51,7 @@ public class ThirdActivity extends AppCompatActivity {
                 } else {
                     timer_btn_3_1.setText(getString(R.string.Cancel));
                     timer_btn_3_1.setBackgroundColor(Color.RED);
-                    timer6=new CountDownTimer(180000,1000) {
+                    timer6=new CountDownTimer(3000,1000) {
                         @Override
                         public void onTick(long l) {
                             NumberFormat f = new DecimalFormat("00");
@@ -56,9 +65,13 @@ public class ThirdActivity extends AppCompatActivity {
 
                         @Override
                         public void onFinish() {
+                            player_1.start();
+                            vibrator_1.vibrate(VibrationEffect.createOneShot(5000, 250));
                             timer_btn_3_1.setText(getString(R.string.Frying_pancakes));
                             timer_btn_3_1.setBackgroundColor(Color.parseColor("#6750a4"));
                             Toast.makeText(getApplicationContext(), getString(R.string.Ready), Toast.LENGTH_SHORT).show();
+                            timer6 = null;
+                            text_3_1.setText("03:00");
                         }
                     };
                     timer6.start();

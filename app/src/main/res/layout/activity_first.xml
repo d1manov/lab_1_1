@@ -68,14 +68,29 @@
             android:layout_marginStart="20sp"
             android:text="@string/Ingredients_1"/>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="7sp"
-            android:layout_marginTop="7sp"
-            android:layout_marginBottom="5sp"
-            android:textSize="16sp"
-            android:text="@string/Cooking"/>
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7sp"
+                android:layout_marginTop="7sp"
+                android:layout_marginBottom="5sp"
+                android:textSize="16sp"
+                android:text="@string/Cooking"/>
+
+            <ImageButton
+                android:id="@+id/voice_btn"
+                android:layout_marginStart="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/voice"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
 
         <ScrollView
             android:layout_width="match_parent"
